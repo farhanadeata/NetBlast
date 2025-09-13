@@ -68,3 +68,23 @@ This repository is intentionally documented and structured to emphasize **respon
 ```bash
 git clone https://github.com/<your-username>/NetBlash.git
 cd NetBlash
+
+Open in Arduino IDE or PlatformIO and review src/ to understand defaults.
+
+Install dependencies via Library Manager:
+
+Search & install WiFiManager (tzapu)
+
+Install LiquidCrystal I2C or Adafruit SSD1306 if using display
+
+Compile and export binary (optional):
+
+Sketch → Export Compiled Binary (Arduino IDE)
+
+Flash to ESP8266:
+
+Using USB + NodeMCU PyFlasher, esptool, or browser flasher (ESP Web Flasher).
+
+If first-time run, device opens ESP-Setup AP for Wi-Fi provisioning (WiFiManager).
+
+Set up a safe target (on your PC / local server):
